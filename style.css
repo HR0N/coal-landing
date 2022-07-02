@@ -121,8 +121,7 @@ html, body, *{
 .section-3{
     display: flex;
     flex-direction: row;
-    padding: 0 5%;
-    margin-top: 20%;
+    padding: 400px 5% 0 5%;
     margin-bottom: 30px;
 }
 .section3__box-left{
@@ -226,10 +225,9 @@ html, body, *{
 /*                              section 4          end       */
 /*                              section 5          start     */
 .section-5{
-    margin-top: 150px;
     display: grid;
     grid-template: 1fr 1fr / 1fr;
-    padding: 0 6%;
+    padding: 150px 6% 0 6%;
 }
 .section-5__row{
     display: grid;
