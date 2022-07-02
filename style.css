@@ -123,6 +123,7 @@ html, body, *{
     flex-direction: row;
     padding: 0 5%;
     margin-top: 20%;
+    margin-bottom: 30px;
 }
 .section3__box-left{
     max-width: 50%;
