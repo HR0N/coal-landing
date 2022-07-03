@@ -29,7 +29,7 @@ body, html, *{
     padding: 6px 10%;
     font-family: Roboto, Arial, serif;
     position: sticky;
-    z-index: 3;
+    z-index: 4;
     top: 0;
     left: 0;
     transition: linear all .3s;

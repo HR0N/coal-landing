@@ -4,6 +4,7 @@ class Menu extends Class_Father{
         this.elem = $(elem);
         this.buttons = this.find('.button');
         this.ul_list = this.find('.header-nav');
+        this.menu_items = this.find('.menu-item');
 
         this.events();
     }
@@ -32,5 +33,12 @@ class Menu extends Class_Father{
         });
         this.buttons.on('click', this.toggle_buttons.bind(this));
         this.buttons.on('click', this.toggle_menu.bind(this));
+        this.menu_items.on('click', ()=>{
+            if(this.ul_list.hasClass('show')){
+                this.ul_list.fadeOut(1);
+                this.ul_list.removeClass('show');
+                this.toggle_buttons();
+            }
+        });
     };
 }

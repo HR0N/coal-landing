@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./libs/h-boobstrap.css">
 <!--    <script src="https://use.fontawesome.com/d7f609ebcd.js"></script>-->
     <script src="https://kit.fontawesome.com/ee97ebf0ee.js" crossorigin="anonymous"></script>
     <title>Coal Products - ALMINA</title>
@@ -19,8 +20,8 @@
         <div class="email">Email Us: <span>info@anmolcoal.com</span></div>
     </div>
     <div class="pre-header__right">
-        <span class="terms">Terms & Conditions</span>
-        <span class="privacy">Privacy Policy</span>
+<!--        <span class="terms">Terms & Conditions</span>-->
+<!--        <span class="privacy">Privacy Policy</span>-->
     </div>
 </div>
 <header class="header menu-1">
@@ -79,7 +80,7 @@
         <p class="section3__left-text">
             Established in 1998, Anmol India Ltd is a renown name in Coal Import, Coal Trading and Coal Supply industry. Its phenomenal growth, since its inception has made it a trusted brand among clients located in over 100 different areas in India. Initially Serving Brick Kiln Industry ( Ent Bhatta ) and Coal traders & Coal Dealers, today the company caters to the demand of over half a dozen different types of Industries and trades both in Steam / Thermal Coal and Pet Coke. Doing a multi-billion INR business every year, Anmol’s sales operations cover almost half of India.
         </p>
-        <button class="section3__left-btn">about</button>
+<!--        <button class="section3__left-btn">about</button>-->
     </div>
     <div class="section3__box-right">
         <img src="video/Coal.jpg" alt="" class="section3__left-pic">
@@ -150,11 +151,26 @@
     </div>
 </section>
 <!--                                    SECTION 6                                    -->
-<!--<section class="section-6"><span>6</span></section>-->
+<section class="section-6">
+    <div class="section-6__interface">
+        <span class="section-6__interface__title">We are here to provide a fresh perspective. <br>Ready to work
+            with us?</span>
+        <div class="section-6__interface__button">Contact us</div>
+    </div>
+    <img class="section-6__bg-img" src="./video/work_with_us.jpg" alt="img">
+</section>
 <!--<section class="section-7"><span>7</span></section>-->
 <!--<section class="section-8"><span>8</span></section>-->
 <!--<section class="section-9"><span>9</span></section>-->
-<!--<section class="section-10"><span>10</span></section>-->
+<section class="section-modal-window">
+    <div class="modal-window1-wrapper">
+        <div class="modal-window1">
+            <div class="modal-window1__phone">Call Us: <br><span>+91-9878076554</span></div>
+            <div class="modal-window1__email">Email Us: <br><span>info@anmolcoal.com</span></div>
+            <div class="modal-window1__buttons"><div class="btn btn-danger hide_modal_w">Close</div></div>
+        </div>
+    </div>
+</section>
 <footer class="footer">
     <div class="footer__row1">
         <div class="footer__row1_company">
@@ -164,15 +180,15 @@
                 BSE Code: ANMOL
             </div>
         </div>
-        <div class="footer__row1_info">
-            <div class="footer__row1_info_title">Our Company</div>
-            <a href="/">About Us</a>
-            <a href="/">Products</a>
-            <a href="/">Team</a>
-            <a href="/">Contact Us</a>
+        <!--<div class="footer__row1_info">
+            <div class="footer__row1_info_title">About Us</div>
+            <a href="/"></a>
+            <a href="/"></a>
+            <a href="/"></a>
+            <a href="/"></a>
         </div>
         <div class="footer__row1_info">
-            <div class="footer__row1_info_title">For Investors</div>
+            <div class="footer__row1_info_title">Products</div>
             <a href="/">Investor</a>
             <a href="/">Relations</a>
             <a href="/">CSR Policy</a>
@@ -180,19 +196,19 @@
             <a href="/">Listing</a>
         </div>
         <div class="footer__row1_info">
-            <div class="footer__row1_info_title">Legal</div>
+            <div class="footer__row1_info_title">Team</div>
             <a href="/">Terms & Conditions</a>
             <a href="/">Privacy Policy</a>
             <a href="/">Updates</a>
         </div>
         <div class="footer__row1_info">
-            <div class="footer__row1_info_title">Social Media</div>
+            <div class="footer__row1_info_title">Contact Us</div>
             <a href="/">LinkedIn</a>
             <a href="/">Twitter</a>
             <a href="/">Facebook</a>
             <a href="/">Android App</a>
             <a href="/">iPhone App</a>
-        </div>
+        </div>-->
     </div>
     <div class="footer__row2">© 2014-2022 Anmol India Limited. All Rights Reserved.</div>
 </footer>
@@ -203,6 +219,8 @@
 <script src="./libs/jquery-3.6.0.min.js"></script>
 <script src="./js/class_father.js"></script>
 <script src="./js/menu.js"></script>
+<script src="./js/modal_window.js"></script>
 <script>$(document).ready(() => {let menu1 = new Menu('.menu-1')});</script>
+<script>$(document).ready(() => {new Modal_window('body')});</script>
 </body>
 </html>
