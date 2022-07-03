@@ -64,7 +64,9 @@ html, body, *{
     color: whitesmoke;
 }
 .section-1__group-1 .section1__title{font-size: 3em}
-.section-1__group-1 .section1__text{font-size: .7em}
+.section-1__group-1 .section1__text{
+    font-size: .7em;
+    margin-top: 15px;}
 .section-1__group-1 .section1__btn{
     color: whitesmoke;
     font-size: 1em;
@@ -305,6 +307,7 @@ html, body, *{
     margin-top: 150px;
     position: relative;
     width: 100%;
+    min-height: 300px;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -385,8 +388,10 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
+    column-gap: 20px;
+    row-gap: 20px;
+    align-items: start;
 }
 .footer__row1_company_logo img{
     max-width: 268px;
@@ -446,6 +451,19 @@ footer{
 .modal-window1__buttons{
     display: grid;
     justify-content: right;
+}
+.section-routing-animation{
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: rgb(16, 17, 18);
+    transition: linear all .8s .5s;
+}
+.section-routing-animation.remove_routing{
+    width: 0;
 }
 /*                              modal window          end      */
 /*todo:                                                                . . : : @media : : . .         */
@@ -544,6 +562,9 @@ footer{
         max-height: 250px;
     }
     /*          section 4            */
+    .section-4__row2 .section-4__row2_map{
+        margin: 50px 0;
+    }
     .section-4{
         padding: 100px 6%;
     }
@@ -575,6 +596,9 @@ footer{
         margin: 30px auto 0;
     }
     /*          footer          */
+    .footer__row1_company{
+        flex-direction: column;
+    }
     .footer__row1{
         display: flex;
         flex-direction: column;
@@ -588,6 +612,12 @@ footer{
     }
     .section-1__group-1{
         font-size: 12px;
+    }
+    .section-1__group-1 .section1__title{
+        font-size: 1.6em;
+    }
+    .section-1__group-1 .section1__text{
+        margin-top: 10px;
     }
     .section-1__group-1 .section1__btn{
         margin: 10px 0;
@@ -631,7 +661,7 @@ footer{
         font-size: 1.1em;
     }
     .section-6__interface__button{
-        margin-top: 20px;
+        margin-top: 30px;
     }
     /*          modal window            */
     .modal-window1{
